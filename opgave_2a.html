@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Øvelse 1 - HTML5 struktur1</title>
+    <title> Øvelse 2A - Udvælg DOM-elementer </title>
     <style>
 *{
     margin: 5px;
@@ -27,6 +27,7 @@ footer{
     display: grid;
     justify-content: center;
 }
+
     </style>
 </head>
 <body>
@@ -36,7 +37,7 @@ footer{
     <main>
 <h2>Untidle</h2>
 <section>
-    <article >
+    <article>
     <img src="placeimg_640_480_arch.jpg" alt="">
     <h3>Article 1</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, totam consequuntur inventore dolores voluptatibus consequatur mollitia iste sit. Voluptatem, deserunt porro doloremque adipisci necessitatibus dolores repudiandae a laborum fugiat maiores.</p>
@@ -47,9 +48,46 @@ footer{
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa explicabo quaerat dignissimos modi voluptatibus veritatis eaque minus non quas aliquam, nobis vel deleniti, fugiat voluptatem at cum eum nisi quia!</p>
     </article>
 </section>
+</main>
     <footer>
 <p>This is a footer</p>
     </footer>
-    </main>
+<script>
+   const headtitle = document.querySelector("header h1");
+   console.log(headtitle); 
+
+   const headtitle2 = document.querySelector("h2");
+   console.log(headtitle2); 
+
+   const article = document.querySelector("article");
+   console.log(article); 
+
+   const article2 = document.querySelector("article:nth-child(2)");
+   console.log(article2); 
+
+   const headtitle3 = document.querySelector("h3");
+   console.log(headtitle3); 
+
+   const headtitle3_2 = document.querySelector("article:nth-child(2) h3");
+   console.log(headtitle3_2); 
+
+   const article_p = document.querySelector("article p");
+   console.log(article_p); 
+
+   const article2_p = document.querySelector("article:nth-child(2) p");
+   console.log(article2_p); 
+
+   const billede = document.querySelector("article img");
+   console.log(billede); 
+
+   const billede2 = document.querySelector("article:nth-child(2) img");
+   console.log(billede2);
+
+   const footer = document.querySelector("footer");
+   console.log(footer);
+
+   const footer_text = document.querySelector("footer p");
+   console.log(footer_text);
+</script>
 </body>
 </html>
