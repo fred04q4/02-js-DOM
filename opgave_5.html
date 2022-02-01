@@ -112,7 +112,10 @@ footer{
     //øvelse 4
 
     document.addEventListener("DOMContentLoaded",start)
-    function start(){       
+    function start(){    
+
+console.log("DOMContentLoaded");   
+
 let mainSection = document.querySelector("section"); 
 
 let newArticle = document.createElement("article");
@@ -140,7 +143,7 @@ billede3.src = "placeimg_640_480_arch.jpg"
  newArticle.appendChild(textindhold);
 
 mainSection.appendChild(newArticle); 
-console.log("DOMContentLoaded");
+
     }
 
    
